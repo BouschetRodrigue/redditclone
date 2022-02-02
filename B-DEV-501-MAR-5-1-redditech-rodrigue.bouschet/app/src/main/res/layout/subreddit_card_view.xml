@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="5dp"
+    android:translationZ="1dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginBottom="5dp"
+                android:id="@+id/image_subreddit"
+                app:civ_circle_background_color="@color/athens_grey"
+                tools:ignore="ImageContrastCheck" />
+
+            <TextView
+                android:id="@+id/subredditName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="subReddit name" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/subredditDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="5dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            tools:text=" ici la description de chaque compte pour pouvoir s'abonner jusqu'a ici" />
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>
